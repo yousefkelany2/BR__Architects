@@ -1,0 +1,292 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+ .contanier{
+    width: 95%;
+    margin: 100px auto;
+} 
+/* nav bar */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    padding: 10px ;
+    background-color: white;
+    color: black;
+    width: 99%;   
+
+}
+.nav .navR ul{
+
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 10px; 
+  margin-right: 10px; 
+  
+}
+.nav .menu{
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 30px;
+    display: none;
+
+}
+.nav .menu:hover{
+    background-color: gray;
+}
+
+.nav .navR ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    letter-spacing: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+.nav .navR ul li a:hover{
+    background-color: gray;
+}
+
+.nav .navL{
+    display: flex; 
+    letter-spacing: 5px; 
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+}
+.nav .navL:hover{
+    background-color: gray;
+}
+.nav .navL span{
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.image{
+    background-image: url(images/home.jpg);
+    height: 100vh;
+    background-size: cover;
+    width: 99%;
+    margin-left: 5px;
+    position: relative;
+    margin-top: 50px;
+}
+.image p{
+  position: absolute;
+  left: 43%;
+  top: 47%;
+  font-size: 45px;
+  color: white;
+
+}
+.image span{
+    background-color: black;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    padding:  10px;
+    margin: 10px;
+    opacity:0.7;
+}
+/* Project */
+.Project .base{
+    font-size: 25px;  
+    margin-bottom: 3px;
+}
+hr{
+    opacity: 0.2;
+}
+.house{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.home {
+    position: relative;
+    width: 24%;
+}
+.home img{
+    width: 100%;
+}
+.home p{
+    background-color: black;
+    color: white;
+    position: absolute;
+    padding: 10px;
+    left: 0;
+    top: 0;
+
+}
+.About .pase{
+    font-size: 25px;  
+    margin-bottom: 30px;
+}
+.About .Lorem{
+    line-height: 1.5;
+    padding: 10px 0;
+}
+.About .char{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.char .person{
+    position: relative;
+    width: 24%;
+}
+.person img{
+    width: 100%;
+    opacity: 0.9;
+    background-color: black;
+}
+.person .name{
+    font-weight: normal;
+    padding: 10px 0;
+    font-size: 23px;
+}
+.person .des{
+    color: grey;
+    font-size: 15px;
+    font-weight: normal;
+}
+.person button{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: none;
+    transition: 0.5s;
+}
+.person button:hover{
+ background-color: gray;
+}
+/* contact */
+.Contact .bas{
+    font-size: 25px;  
+    
+}
+.con{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.Contact form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 7px 0; 
+    font-size: 15px;
+}
+.Contact button{
+    margin: 15px 0 ;
+    margin-top: 20px;
+    background: black;
+    color: white;
+    padding: 13px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+}
+.Contact button:hover{
+    background-color: grey;
+    color: black;
+}
+.map img{
+    margin: 10px 0;
+    width: 100%;
+}
+/* footer */
+.footer .profil{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.profil{
+    color: white;
+}
+.profil a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.profil a:hover{
+    color: aqua;
+
+}
+@media screen and (max-width : 480px) 
+{
+    .nav{
+        padding: 20px;
+    }
+    .nav .navR ul{
+        display: none;
+    }
+    .nav .menu{
+        display: block;
+    }
+    .image p{
+        font-size: 30px;
+        left: 35%;
+    }
+    .house{
+        flex-direction: column;
+    }
+    .home{
+        width: 100%;
+    }
+    .char .person{
+        width: 100%;
+    }
+    .Contact form input{
+        width: 90%;
+    }
+}
+@media screen and (min-width : 481px) and (max-width : 768px){
+    .nav{
+        padding: 20px;
+    }
+    .nav .navR ul{
+        display: none;
+    }
+    .nav .menu{
+        display: block;
+    }
+    .home{
+        width: 48%;
+    
+    }
+    .char .person{
+        width: 48%;
+    }
+
+}
+@media screen and (min-width : 768px) and (max-width : 1100px){
+    .nav{
+        padding: 20px;
+    }
+    .nav .navR ul{
+        display: none;
+    }
+    .nav .menu{
+        display: block;
+    }
+    .home{
+        width: 48%;
+    
+    }
+    .char .person{
+        width: 48%;
+    }
+
+}
